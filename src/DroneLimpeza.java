@@ -5,7 +5,7 @@ public class DroneLimpeza {
 	public static void main(String[] args) {
 		// Dado 3 lixos, informar ao drone de limpeza qual o lixo de menor peso que deve ser carregado
 		Scanner leitor = new Scanner(System.in);
-		double pesoLixo1, pesoLixo2, pesoLixo3, pesoCarregar;
+		double pesoLixo1, pesoLixo2, pesoLixo3;
 		
 		System.out.println("Informe o peso do lixo 1: ");
 		pesoLixo1 = leitor.nextDouble();

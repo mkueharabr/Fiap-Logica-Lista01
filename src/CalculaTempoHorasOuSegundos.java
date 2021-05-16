@@ -10,11 +10,17 @@ public class CalculaTempoHorasOuSegundos {
 		System.out.println("Informe a duração do filme em minutos: ");
 		tempoMinuto = leitor.nextDouble();
 		
-		duracaoHora = tempoMinuto / 60;
-		duracaoSegundo = tempoMinuto * 60;
+		if (tempoMinuto < 0) {
+			System.out.println("Informe um valor maior ou igual a 0");
+		} else {
+			duracaoHora = tempoMinuto / 60;
+			duracaoSegundo = tempoMinuto * 60;
+			
+			System.out.println("O filme tem duração de " + duracaoHora + 
+					" hora(s) ou " + duracaoSegundo + " segundos");	
+		}
 		
-		System.out.println("O filme tem duração de " + duracaoHora + 
-				" hora(s) ou " + duracaoSegundo + " segundos");
+		
 		
 		leitor.close();
 	}
